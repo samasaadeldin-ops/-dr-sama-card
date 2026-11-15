@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr Sama Saad Eldin</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=DM+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#EEF3EE; --card:#FFFFFF; --ink:#16332E; --muted:#587068; --band:#1F4D45; --band-ink:#F3F7F2; --accent:#E7B64A; --line:#D5E1D9;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0F1D1A;--card:#16282400;--ink:#EAF2ED;--muted:#9DB5AB;--band:#244F47;--band-ink:#F3F7F2;--accent:#E7B64A;--line:#2A423C;--card:#162824}
+}
+:root[data-theme="dark"]{--bg:#0F1D1A;--ink:#EAF2ED;--muted:#9DB5AB;--band:#244F47;--band-ink:#F3F7F2;--accent:#E7B64A;--line:#2A423C;--card:#162824}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;display:flex;align-items:center;justify-content:center;padding:24px 16px}
+.card{width:100%;max-width:400px;background:var(--card);border-radius:22px;overflow:hidden;box-shadow:0 18px 50px rgba(22,51,46,.14)}
+.band{background:var(--band);color:var(--band-ink);padding:36px 28px 56px;position:relative}
+.mono{width:64px;height:64px;border-radius:50%;background:var(--accent);color:#16332E;display:grid;place-items:center;font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:24px}
+.band h1{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:32px;line-height:1.1;margin:20px 0 6px}
+.band p{margin:0;font-size:16px;opacity:.9}
+.body{padding:28px;margin-top:-24px;background:var(--card);border-radius:22px 22px 0 0;position:relative}
+.spec{font-family:"Fraunces",Georgia,serif;font-size:20px;line-height:1.3;margin:0 0 6px}
+.role{margin:0 0 24px;color:var(--muted);font-size:15px;line-height:1.5}
+.actions{display:grid;gap:10px}
+.btn{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 18px;border-radius:14px;font:600 16px "DM Sans",system-ui,sans-serif;text-decoration:none;border:1.5px solid var(--line);color:var(--ink);background:transparent;cursor:pointer;width:100%;text-align:left}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#16332E}
+.btn small{font-weight:400;color:inherit;opacity:.75;font-size:14px}
+.btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.clinic{margin:0 0 24px;padding:18px;border-radius:14px;background:var(--bg)}
+.clinic h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:18px;margin:0 0 10px}
+.hours{list-style:none;margin:0 0 14px;padding:0}
+.hours li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:16px}
+.hours li span:last-child{font-weight:600}
+.place{margin:0;font-size:17px;font-weight:500;line-height:1.5}
+.map{display:inline-block;margin-top:10px;font-size:15px;font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:4px}
+.map:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.note{margin:18px 0 0;font-size:13px;color:var(--muted);text-align:center;min-height:18px}
+</style>
+</head>
+<body>
+<main class="card">
+  <section class="band">
+    <div class="mono" aria-hidden="true">SS</div>
+    <h1>Dr Sama Saad Eldin</h1>
+    <p>Medical Doctor</p>
+  </section>
+  <section class="body">
+    <p class="spec">Clinical Nutrition &amp; Lifestyle Medicine</p>
+    <p class="role">Head of Clinical Nutrition Department, ASSIH-NC</p>
+    <div class="clinic"><h2>Al Salam International Hospital, New Cairo</h2><ul class="hours"><li><span>Tuesday</span><span>4 PM to 6 PM</span></li><li><span>Thursday</span><span>2 PM to 4 PM</span></li></ul><p class="place" dir="rtl" lang="ar">مستشفى السلام الدولي بالتجمع الخامس</p><a class="map" href="https://maps.app.goo.gl/Pi3uWeHGUcAfX7S5A?g_st=ic" target="_blank" rel="noopener">Open location in Maps &#8599;</a><a class="btn primary" style="margin-top:16px" href="tel:19885"><span>Call to book<br><small>Hotline 19885</small></span><span aria-hidden="true">&#9742;</span></a></div>
+    <div class="clinic"><h2>Sweven Clinics</h2><ul class="hours"><li><span>Monday</span><span>6 PM</span></li></ul><p class="place">New Maadi, Cairo</p><a class="map" href="https://www.google.com/maps/place/Sweven+clinics%D8%8C+%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%D9%89+%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9+%D8%B9%D9%85%D8%A7%D8%B1%D8%A9+%D9%A1%D9%A9%D8%8C+%D8%B4%D8%A7%D8%B1%D8%B9+%D8%A7%D9%84%D9%86%D8%B5%D8%B1,+Maadi%D8%8C+%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9+%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9%E2%80%AC%E2%80%AD/@29.9756827,31.2839449,21z/data=!4m6!3m5!1s0x1458393118ae96f1:0xf4138452ac0dd655!8m2!3d29.9757257!4d31.2839455!16s%2Fg%2F11twh190r4?hl=ar&amp;g_ep=Eg1tbF8yMDI2MTExMF8wIOC7DCoASAJQAg%3D%3D" target="_blank" rel="noopener">Open location in Maps &#8599;</a><a class="btn primary" style="margin-top:16px" href="tel:+201068852126"><span>Call to book<br><small>0106 885 2126</small></span><span aria-hidden="true">&#9742;</span></a></div>
+    <div class="clinic"><h2>Online consultations</h2><a class="btn" href="https://wa.me/201034688334" target="_blank" rel="noopener"><span>WhatsApp<br><small>0103 468 8334</small></span><span aria-hidden="true">&#8599;</span></a></div>
+    <div class="actions">
+      <a class="btn" href="https://www.instagram.com/drsamasaadeldin/" target="_blank" rel="noopener"><span>Instagram<br><small>@drsamasaadeldin</small></span><span aria-hidden="true">&#8599;</span></a>
+    </div>
+    <p class="note" id="note" role="status"></p>
+  </section>
+</main>
+<script>
+var note=document.getElementById('note');
+function say(t){note.textContent=t;setTimeout(function(){note.textContent=''},2200)}
+</script>
+</body>
+</html>
